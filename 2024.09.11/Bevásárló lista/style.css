@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+div {
+    background-color: #fff00f;
+    font-size: 30px;
+    text-shadow: 1px,1px,3px,gray;
+    text-align: center;
+}
+
+input[type = text] {
+    width: 300px;
+    text-align: center;
+}
+
+div.x0 {
+    background-color: aqua;
+    padding: 10px;
+}
+
+div.x1 {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+div.y1 {
+    color: rgb(225, 208, 208);
+    text-decoration: line-through;
+}
+
+span {
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: 1px,1px,3px black;
+    padding: 3px;
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+span:hover {
+    background-color: rgb(211, 144, 144);
+}

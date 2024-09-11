@@ -1,0 +1,18 @@
+
+ .body {
+    text-align: center;
+ }
+
+
+.div {
+    background-color: maroon;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+
+}
+
+input [type = text] {
+    width: 300px;
+    text-align: center;
+}
