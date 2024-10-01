@@ -1,37 +1,65 @@
-#main{
-    display: flex;
-  justify-content: space-between;
-}
-body{
-    background-color: rgb(26, 26, 60);
-    padding: 25px;
-    margin: 25px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.equals {
+    grid-column: span 2;
+    background-color: #4caf50;
     color: white;
 }
 
-h1{
-    color: rgb(244, 219, 187);
-    text-align: center;
-}
-.tabla{
-    background-color: rgb(240, 210, 171);
-    border: 3px solid black;
-    border-radius: 20px;
-}
-div{
-    padding-left: 125px;
-    padding-right: 110px;
-    padding-bottom: 5px;
-}
-
-a {
-    color: red;
-    text-decoration: underline brown;
-}
-
-h2 {
-    color: darkred;
+.equals:hover {
+    background-color: #45a049;
 }

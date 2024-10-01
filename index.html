@@ -2,36 +2,34 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
-    <link rel="stylesheet" href="style.css" >
-    <script src="valami.js"></script>
-    <title>Portfólió</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1 >Portfólióm</h1>
-    <P style="text-align: center;">Ezen az oldalon fogom megjeleníteni a frontend munkáimat!</P>
-    <div id="main">
-        <div class="tabla">
-            <h2>Órai feladat</h2>
-                <a href="./2024.09.11/Bevásárló lista/index.html" target="_blank" >2024.09.11</a><br/>
-                <a href="./sov02_sveltekit-master/docs/index.html" target="_blank" >2024.09.12</a><br/>
-                <a href="./2024.09.18/Alapdolgok/index.html" target="_blank" >2024.09.18</a><br/>
-                <a href="./2024.09.18/Számológép/index.html" target="_blank" >2024.09.18(szamologep)</a><br/>
-                <a href="./2024.09.19/promise/index.html" target="_blank" >2024.09.19 java modules</a><br/>
-        </div>
-
-        <div class="tabla">
-            <h2>Házi feladat</h2>
-                <a href="./2024.09.05.Elso_Feladat/index.html" target="_blank" >2024.09.05</a><br/>
-        </div>
-        <div class="tabla">
-            <h2>Projekt feladat</h2>
-            
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">←</button>
+            <button onclick="appendOperator('/')">/</button>
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button onclick="appendOperator('*')">*</button>
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button onclick="appendOperator('-')">-</button>
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button onclick="appendOperator('+')">+</button>
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="calculateResult()" class="equals">=</button>
         </div>
     </div>
-    
-    
+    <script src="calculator.js"></script>
 </body>
 </html>
-
